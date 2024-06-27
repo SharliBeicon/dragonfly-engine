@@ -8,17 +8,16 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(
   src/managers/include
-  src/utils/include
 )
 
 set(SOURCES
   src/managers/Manager.cpp
-  src/utils/utils.cpp
+  src/managers/LogManager.cpp
 )
 
 set(HEADERS
-  src/utils/include/utils.h
   src/managers/include/Manager.h
+  src/managers/include/LogManager.h
 )
 
 find_package(SFML 2.6.1 COMPONENTS system window graphics network audio REQUIRED)
